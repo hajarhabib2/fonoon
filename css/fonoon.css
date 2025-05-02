@@ -119,7 +119,7 @@ h4.fonoon-quote {
 /* Adjust background position for smaller screens */
 @media (max-width: 768px) {
   .landing {
-    background-position: 40% 20%;
+    background-position: 50% 20%;
   }
 }
 /* End Landing */

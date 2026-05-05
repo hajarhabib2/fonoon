@@ -80,7 +80,8 @@ body {
 /* Start Landing */
 .landing {
   z-index: 1;
-  background-image: linear-gradient(rgb(131 204 206 / 10%), rgb(22 44 88)),
+  background-image:
+    linear-gradient(rgb(131 204 206 / 10%), rgb(22 44 88)),
     url(../imgs/boy3.jpg);
   background-position: center top;
   background-size: cover;
@@ -121,7 +122,7 @@ h4.fonoon-quote {
 /* Adjust background position for smaller screens */
 @media (max-width: 768px) {
   .landing {
-    background-position: 50% 20%; /*x & y positions*/
+    background-position: 50% 20%;
   }
 }
 /* End Landing */
@@ -129,8 +130,8 @@ h4.fonoon-quote {
 /* Start Why Fonoon */
 .why-section {
   margin: 0;
-  background-image: linear-gradient(#fff9c48f, #fffde700),
-    url(../imgs/stars.jpeg);
+  background-image:
+    linear-gradient(#fff9c48f, #fffde700), url(../imgs/stars.jpeg);
   background-size: contain;
   background-repeat: repeat;
   min-height: calc(100vh - 72px); /* Ensures full section height */
@@ -181,8 +182,14 @@ h4.fonoon-quote {
 .gallery .gallery-h1 {
   /* color: #fffde7; */
   color: #0d47a1;
-  text-shadow: 3px 3px 0 #fff, -3px 3px 0 #fff, 3px -3px 0 #fff,
-    -3px -3px 0 #fff, 3px 0px 0 #fff, -3px 0px 0 #fff, 0px 3px 0 #fff,
+  text-shadow:
+    3px 3px 0 #fff,
+    -3px 3px 0 #fff,
+    3px -3px 0 #fff,
+    -3px -3px 0 #fff,
+    3px 0px 0 #fff,
+    -3px 0px 0 #fff,
+    0px 3px 0 #fff,
     0px -3px 0 #fff;
 }
 .gallery img {
@@ -196,10 +203,8 @@ h4.fonoon-quote {
 /* Start Goal section */
 .goal-section .goal-quote {
   color: #1976d2;
-  background-image: linear-gradient(
-      rgb(255 255 255 / 83%),
-      rgb(255 255 255 / 80%)
-    ),
+  background-image:
+    linear-gradient(rgb(255 255 255 / 83%), rgb(255 255 255 / 80%)),
     url(/imgs/dots.jpeg);
 
   padding-inline: clamp(1.5rem, 15vw, 10rem);
@@ -218,8 +223,8 @@ h4.fonoon-quote {
   min-height: calc(100vh - 72px);
   height: auto;
   padding: 4% 15%;
-  background-image: linear-gradient(#e3f2fd73, #bbdefb38),
-    url(../imgs/stars.jpeg);
+  background-image:
+    linear-gradient(#e3f2fd73, #bbdefb38), url(../imgs/stars.jpeg);
   background-size: contain;
   background-repeat: repeat;
 }

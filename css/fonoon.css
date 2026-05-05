@@ -20,6 +20,7 @@ html {
 body {
   font-family: "Work Sans", serif;
 }
+
 /* Start Components  own-framework*/
 .special-heading {
   letter-spacing: -2px;
@@ -79,9 +80,10 @@ body {
 /* Start Landing */
 .landing {
   z-index: 1;
-  background-image: linear-gradient(rgb(131 204 206 / 10%), rgb(22 44 88 / 71%)),
-    url(../imgs/boy3.jpg); /* to change  the image opacity*/
-  background-position: center top; /* Default */
+  background-image:
+    linear-gradient(rgb(131 204 206 / 10%), rgb(22 44 88)),
+    url(../imgs/boy3.jpg);
+  background-position: center top;
   background-size: cover;
   background-repeat: no-repeat;
   height: calc(100vh - 72px);
@@ -93,11 +95,12 @@ body {
 }
 .fonoon-heading {
   color: #fffde7;
-  text-shadow: 0 0 5px #38b6ff, 0 0 10px #38b6ff;
+  font-size: 4rem;
+  /* text-shadow: 0 0 5px #38b6ff, 0 0 10px #38b6ff; */
 }
 
 h4.fonoon-quote {
-  font-size: clamp(1.3rem, 4vw, 2rem);
+  font-size: clamp(1.3rem, 3vw, 2rem);
 
   font-weight: 300;
   padding: 20px 5px;
@@ -127,8 +130,8 @@ h4.fonoon-quote {
 /* Start Why Fonoon */
 .why-section {
   margin: 0;
-  background-image: linear-gradient(#fff9c48f, #fffde700),
-    url(../imgs/stars.jpeg);
+  background-image:
+    linear-gradient(#fff9c48f, #fffde700), url(../imgs/stars.jpeg);
   background-size: contain;
   background-repeat: repeat;
   min-height: calc(100vh - 72px); /* Ensures full section height */
@@ -179,8 +182,14 @@ h4.fonoon-quote {
 .gallery .gallery-h1 {
   /* color: #fffde7; */
   color: #0d47a1;
-  text-shadow: 3px 3px 0 #fff, -3px 3px 0 #fff, 3px -3px 0 #fff,
-    -3px -3px 0 #fff, 3px 0px 0 #fff, -3px 0px 0 #fff, 0px 3px 0 #fff,
+  text-shadow:
+    3px 3px 0 #fff,
+    -3px 3px 0 #fff,
+    3px -3px 0 #fff,
+    -3px -3px 0 #fff,
+    3px 0px 0 #fff,
+    -3px 0px 0 #fff,
+    0px 3px 0 #fff,
     0px -3px 0 #fff;
 }
 .gallery img {
@@ -194,10 +203,8 @@ h4.fonoon-quote {
 /* Start Goal section */
 .goal-section .goal-quote {
   color: #1976d2;
-  background-image: linear-gradient(
-      rgb(255 255 255 / 83%),
-      rgb(255 255 255 / 80%)
-    ),
+  background-image:
+    linear-gradient(rgb(255 255 255 / 83%), rgb(255 255 255 / 80%)),
     url(/imgs/dots.jpeg);
 
   padding-inline: clamp(1.5rem, 15vw, 10rem);
@@ -216,8 +223,8 @@ h4.fonoon-quote {
   min-height: calc(100vh - 72px);
   height: auto;
   padding: 4% 15%;
-  background-image: linear-gradient(#e3f2fd73, #bbdefb38),
-    url(../imgs/stars.jpeg);
+  background-image:
+    linear-gradient(#e3f2fd73, #bbdefb38), url(../imgs/stars.jpeg);
   background-size: contain;
   background-repeat: repeat;
 }

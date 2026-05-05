@@ -57,7 +57,7 @@
     <!-- Start Landing -->
     <section class="landing d-flex justify-content-center align-items-end pb-5">
       <div class="text-center rounded-4">
-        <h1 class="fonoon-heading display-1 fw-normal">A World Of Creativity</h1>
+        <h1 class="fonoon-heading  fw-normal">A World Of Creativity</h1>
         <h4 class="fonoon-quote">At <span>Fonoon</span> Kindergarten, we discover and develop your child's unique
           talents, fostering confidence.</h4>
         <a class="btn  btn-primary rounded-pill main-btn" href="#contact">Contact Us</a>
@@ -193,22 +193,23 @@
           </div>
           <div class="col-sm-12 col-lg-6">
             <div class="right text-body-secondary ">
-              <form>
-
+              <form id="contact-form">
                 <div class="form-floating mb-3">
-                  <input type="text" class="form-control" id="floatingInput" placeholder="Your Name">
-                  <label for="floatingInput">Your Name</label>
+                  <input type="text" name="from_name" class="form-control" id="floatingName" placeholder="Your Name"
+                    required>
+                  <label for="floatingName">Your Name</label>
                 </div>
 
                 <div class="form-floating mb-3">
-                  <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                  <label for="floatingInput">Email address</label>
+                  <input type="email" name="from_email" class="form-control" id="floatingEmail"
+                    placeholder="name@example.com" required>
+                  <label for="floatingEmail">Email address</label>
                 </div>
+
                 <div class="mb-3">
                   <label for="formControlTextarea1" class="form-label">Message</label>
-                  <textarea class="form-control" id="formControlTextarea1" rows="5"></textarea>
+                  <textarea name="message" class="form-control" id="formControlTextarea1" rows="5" required></textarea>
                 </div>
-
                 <button type="submit" class="btn btn-primary mt-2">📩 Send Message</button>
               </form>
             </div>
@@ -217,7 +218,7 @@
       </div>
       <!-- </div> -->
     </section>
-    <!-- Start form section -->
+    <!-- end form section -->
   </main>
   <footer>
     <div class="container">
@@ -256,7 +257,7 @@
       </div>
       <div class="row">
         <div class="copyrights mt-5">
-          <h6 class="text-center">Copyright © 2025 Designed by Hajar Habib</h6>
+          <h6 class="text-center">Copyright © 2025 Designed by Hagar Habib</h6>
         </div>
       </div>
     </div>
@@ -264,6 +265,14 @@
 
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/all.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="js/script.js"></script>
+  <script type="text/javascript">
+    // 2. Initialize EmailJS with your Public Key
+    (function () {
+      emailjs.init("YOUR_PUBLIC_KEY");
+    })();
+  </script>
 </body>
 
 </html>
